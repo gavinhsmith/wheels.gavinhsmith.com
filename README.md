@@ -1,11 +1,5 @@
-# [wheels website](https://wheels.gavinhsmith.com/)
+# Vue 3 + TypeScript + Vite
 
-oh mah god oh mah god
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## what ???
-
-this is the repo for my studid goofy side project, wheels website. its supposed to emulate an early 2000/late 90's site owned by one (1) mr wheels, were i (the royal i of mr wheels, in fact) can post whatever he (in this case the "he" in question being mr wheels) want without worrying about the hoard of malevolent wasps that want my entrails.
-
-## ok
-
-if your interested in a fun fact, i made this repo 3 (three) years before i made the website lol.
+Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).

@@ -1,20 +1,25 @@
 {
   "name": "wheels.gavinhsmith.com",
-  "packageManager": "yarn@4.4.1",
   "private": true,
-  "devDependencies": {
-    "express": "^4.21.2",
-    "handlebars": "^4.7.8",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^6.0.1",
-    "serve": "^14.2.4",
-    "tailwindcss": "^3.4.17"
-  },
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "build": "rimraf ./dist && node ./build.js",
-    "start": "serve ./dist",
-    "dev:css": "tailwindcss -i ./src/tailwind.css -o ./dist/css/main.css --watch",
-    "dev:live": "node ./dev.js",
-    "dev": "npm-run-all --parallel dev:css dev:live --print-label"
-  }
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
+  },
+  "packageManager": "yarn@4.6.0"
 }
