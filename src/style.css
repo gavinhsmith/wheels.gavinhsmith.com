@@ -6,7 +6,7 @@
   :root {
     @apply font-semibold;
 
-    font-family: ComicSansMS, system-ui;
+    font-family: PixelComicSans, system-ui;
     color-scheme: light dark;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -14,7 +14,21 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  body {
-    @apply m-0 flex min-w-80 min-h-screen;
+  svg {
+    display: block;
+  }
+
+  #app {
+    @apply flex flex-col items-center justify-center w-screen h-screen;
+    background-image: url("/assets/images/tv_static.gif");
+  }
+
+  .content {
+    @apply overflow-x-scroll overscroll-none bg-white filter;
+  }
+
+  .content-desktop {
+    @apply h-full;
+    aspect-ratio: 4 / 3;
   }
 }

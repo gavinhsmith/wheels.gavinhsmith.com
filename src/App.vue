@@ -1,12 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ContentWarning from "./components/ContentWarning.vue";
+</script>
 
 <template>
-  <h1 class="text-2xl">Hello, World!</h1>
+  <div class="content lg:content-desktop">
+    <h1 class="">Hello, World!</h1>
+    <ContentWarning />
+  </div>
 </template>
 
 <style>
 @font-face {
-  font-family: ComicSansMS;
-  src: url("/assets/fonts/ComicSansMS.ttf");
+  font-family: PixelComicSans;
+  src: url("/assets/fonts/PixelComicSans.ttf");
 }
 </style>
