@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply m-0 p-0;
+  }
+
   :root {
     @apply font-semibold;
 
@@ -19,16 +23,23 @@
   }
 
   #app {
-    @apply flex flex-col items-center justify-center w-screen h-screen;
-    background-image: url("/assets/images/tv_static.gif");
+    @apply flex flex-col items-center justify-center w-screen h-screen bg-black;
   }
 
   .content {
-    @apply overflow-x-scroll overscroll-none bg-white filter;
+    @apply overflow-y-scroll overscroll-none bg-white w-full h-full m-4;
   }
 
   .content-desktop {
-    @apply h-full;
+    @apply w-fit;
     aspect-ratio: 4 / 3;
+  }
+
+  button {
+    @apply bg-white m-0 px-2 border-2 border-b-8 border-slate-300 hover:border-b-4 hover:mt-1;
+  }
+
+  a {
+    @apply underline-offset-2 hover:underline;
   }
 }
