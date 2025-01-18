@@ -1,5 +1,5 @@
 <script setup lang="ts">
-function mouseOver(event: any) {
+function mouseOver() {
   const hidables = document.getElementsByClassName("hideOnHover");
 
   for (let i = 0; i < hidables.length; i++) {
@@ -11,7 +11,7 @@ function mouseOver(event: any) {
   )).style.backgroundImage = 'url("/assets/images/eye.png")';
 }
 
-function mouseLeave(event: any) {
+function mouseLeave() {
   const hidables = document.getElementsByClassName("hideOnHover");
 
   for (let i = 0; i < hidables.length; i++) {
